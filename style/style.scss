@@ -1,0 +1,129 @@
+// FONT 
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+// COLORS
+
+// primary
+$c-pale-blue: hsl(225, 100%, 94%);
+$c-bright-blue: hsl(245, 75%, 52%);
+
+// neutral
+$c-very-pale-blue: hsl(225, 100%, 98%);
+$c-desaturated-blue: hsl(224, 23%, 55%);
+$c-dark-blue: hsl(223, 47%, 23%);
+
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Red Hat Display";
+}
+
+main {
+	width: 100%;
+	height: calc(100vh - 14px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $c-pale-blue;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	max-width: 325px;
+	background-color: white;
+	border-radius: 15px;
+
+	img {
+		border-radius: 15px 15px 0 0;
+	}
+
+	h1 {
+		margin: 25px 0;
+		text-align: center;
+		font-size: 23px;
+	}
+
+	> p {
+		text-align: center;
+		color: $c-desaturated-blue;
+		font-size: 16px;
+		line-height: 25px;
+		margin-bottom: 25px;
+	}
+
+	.plan {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		background-color: $c-very-pale-blue;
+		border-radius: 15px;
+		margin: 0 20px;
+		padding: 15px 15px;
+
+		a, p {
+			font-size: 16px;
+		}
+
+		a {
+			font-weight: bold;
+			color: $c-bright-blue;
+		}
+
+		a:hover {
+			color: $c-desaturated-blue;
+		}
+
+		.text > p:nth-child(1) {
+			font-weight: bold;
+		}
+		.text > p:nth-child(2) {
+			color: $c-desaturated-blue;
+		}
+	}
+
+	.buttons {
+		display: flex;
+		flex-direction: column;
+	
+
+		button {
+			padding: 15px 10px;
+			width: 90%;
+			margin: 20px auto 0 auto;
+			border-radius: 10px;
+			border: none;
+			cursor: pointer;
+		}
+
+		button:nth-child(1) {
+			background-color: $c-bright-blue;
+			color: white;
+			font-weight: bold;
+		}
+		
+		button:nth-child(1):hover {
+			background-color: $c-desaturated-blue;
+		}
+
+		button:nth-child(2) {
+			background-color: white;
+			margin-bottom: 15px;
+			font-weight: bold;
+			color: $c-desaturated-blue;
+
+			
+		}
+
+		button:nth-child(2):hover {
+			color: $c-dark-blue;
+		}
+	}
+}
+
+footer {
+	background-color: $c-pale-blue;
+}

@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display";
+}
+
+main {
+  width: 100%;
+  height: calc(100vh - 14px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e8ff;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 325px;
+  background-color: white;
+  border-radius: 15px;
+}
+.wrapper img {
+  border-radius: 15px 15px 0 0;
+}
+.wrapper h1 {
+  margin: 25px 0;
+  text-align: center;
+  font-size: 23px;
+}
+.wrapper > p {
+  text-align: center;
+  color: #7280a7;
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 25px;
+}
+.wrapper .plan {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f7ff;
+  border-radius: 15px;
+  margin: 0 20px;
+  padding: 15px 15px;
+}
+.wrapper .plan a, .wrapper .plan p {
+  font-size: 16px;
+}
+.wrapper .plan a {
+  font-weight: bold;
+  color: #3829e0;
+}
+.wrapper .plan a:hover {
+  color: #7280a7;
+}
+.wrapper .plan .text > p:nth-child(1) {
+  font-weight: bold;
+}
+.wrapper .plan .text > p:nth-child(2) {
+  color: #7280a7;
+}
+.wrapper .buttons {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .buttons button {
+  padding: 15px 10px;
+  width: 90%;
+  margin: 20px auto 0 auto;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.wrapper .buttons button:nth-child(1) {
+  background-color: #3829e0;
+  color: white;
+  font-weight: bold;
+}
+.wrapper .buttons button:nth-child(1):hover {
+  background-color: #7280a7;
+}
+.wrapper .buttons button:nth-child(2) {
+  background-color: white;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #7280a7;
+}
+.wrapper .buttons button:nth-child(2):hover {
+  color: #1f2f56;
+}
+
+footer {
+  background-color: #e0e8ff;
+}
+
+/*# sourceMappingURL=style.css.map */
