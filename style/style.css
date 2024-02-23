@@ -5,13 +5,16 @@
   font-family: "Red Hat Display";
 }
 
+body {
+  background-color: #e0e8ff;
+}
+
 main {
   width: 100%;
   height: calc(100vh - 14px);
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #e0e8ff;
 }
 
 .wrapper {

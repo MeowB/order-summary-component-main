@@ -19,13 +19,16 @@ $c-dark-blue: hsl(223, 47%, 23%);
 	font-family: "Red Hat Display";
 }
 
+body {
+	background-color: $c-pale-blue;
+}
+
 main {
 	width: 100%;
 	height: calc(100vh - 14px);
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: $c-pale-blue;
 }
 
 .wrapper {
